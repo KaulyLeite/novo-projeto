@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Projeto GSurf Android</string>
+
+    <!-- Strings da Activity Login: -->
+    <string name="action_settings">Settings</string>
+    <string name="usuario">Usuário</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <!-- Strings da Activity Signup: -->
+    <string name="criar_cadastro">Criar Cadastro</string>
+    <string name="cadastro_texto">Preencha os campos com seus dados completos.</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="repitaasenha">Repita a Senha</string>
+    <string name="datadenascimento">Data de Nascimento</string>
+    <string name="pais">País</string>
+    <string name="estado">Estado</string>
+    <string name="endereco">Endereço</string>
+    <string name="cpf">CPF</string>
+
+    <!-- Strings da Activity Main: -->
+    <string name="hello_world">Teste</string>
+
+</resources>

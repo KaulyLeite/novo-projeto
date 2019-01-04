@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/primary_dark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="@string/criar_cadastro"
+                android:paddingTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/primary_dark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="@string/cadastro_texto"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <!-- Nome Completo: -->
+        <TextView
+            android:text="@string/nome_completo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="textPersonName"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Nome Completo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!--  E-mail: -->
+        <TextView
+            android:text="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim E-mail -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- Senha: -->
+        <TextView
+            android:text="@string/senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Senha -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- Repita a Senha: -->
+        <TextView
+            android:text="@string/repitaasenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_reEnterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Repita a Senha -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- Data de Nascimento: -->
+        <TextView
+            android:text="@string/datadenascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_data"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="date"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Data de Nascimento -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- País: -->
+        <TextView
+            android:text="@string/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_pais"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim País -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- Estado: -->
+        <TextView
+            android:text="@string/estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_estado"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Estado -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp" />
+
+        <!-- Endereço: -->
+        <TextView
+            android:text="@string/endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_address"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="textPostalAddress"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim Endereço -->
+
+        <!-- CPF: -->
+        <TextView
+            android:text="@string/cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/my_cursor" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Fim CPF -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Botão Cancelar: -->
+            <ToggleButton
+                android:id="@+id/link_login"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginLeft="24dp"
+                android:text="ToggleButton"
+                android:layout_alignParentLeft="true"
+                android:background="@color/grey"
+                android:textOff="Cancelar"
+                android:textOn="Cancelar" />
+            <!-- Fim Botão Cancelar -->
+
+            <!-- Botão Ok: -->
+            <ToggleButton
+                android:id="@+id/btn_signup"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="200dp"
+                android:text="ToggleButton"
+                android:layout_alignParentRight="true"
+                android:background="@color/green"
+                android:textOff="Ok"
+                android:textOn="Ok" />
+            <!-- Fim Botão Ok -->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="28dp" />
+    </LinearLayout>
+
+</ScrollView>
