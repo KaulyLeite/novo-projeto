@@ -145,7 +145,7 @@ class SignupActivity : AppCompatActivity() {
             _reEnterPasswordText.error = null
         }
 
-        if (data.isEmpty()) {
+        if (data.isEmpty() || data.length != 10) {
             _dataText.error = "Insira uma data de nascimento válida."
             valid = false
         } else {
