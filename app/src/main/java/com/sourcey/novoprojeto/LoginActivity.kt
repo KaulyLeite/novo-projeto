@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.sourcey.novoprojeto
 
 import android.app.ProgressDialog
@@ -50,14 +52,11 @@ class LoginActivity : AppCompatActivity() {
 
         _loginButton.isEnabled = false
 
-        val progressDialog = ProgressDialog(this@LoginActivity,
+        @Suppress("DEPRECATION") val progressDialog = ProgressDialog(this@LoginActivity,
                 R.style.AppTheme_Dark_Dialog)
         progressDialog.isIndeterminate = true
         progressDialog.setMessage("Autenticando...")
         progressDialog.show()
-
-        val email = _emailText.text.toString()
-        val password = _passwordText.text.toString()
 
         android.os.Handler().postDelayed(
                 {

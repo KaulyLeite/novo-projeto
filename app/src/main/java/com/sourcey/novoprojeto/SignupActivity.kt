@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.sourcey.novoprojeto
 
 import android.app.Activity
@@ -68,21 +70,11 @@ class SignupActivity : AppCompatActivity() {
 
         _signupButton.isEnabled = false
 
-        val progressDialog = ProgressDialog(this@SignupActivity,
+        @Suppress("DEPRECATION") val progressDialog = ProgressDialog(this@SignupActivity,
                 R.style.AppTheme_Dark_Dialog)
         progressDialog.isIndeterminate = true
         progressDialog.setMessage("Criando conta...")
         progressDialog.show()
-
-        val name = _nameText.text.toString()
-        val email = _emailText.text.toString()
-        val password = _passwordText.text.toString()
-        val reEnterPassword = _reEnterPasswordText.text.toString()
-        val data = _dataText.text.toString()
-        val pais = _paisText.text.toString()
-        val estado = _estadoText.text.toString()
-        val address = _addressText.text.toString()
-        val mobile = _mobileText.text.toString()
 
         android.os.Handler().postDelayed(
                 {
