@@ -123,14 +123,14 @@ class SignupActivity : AppCompatActivity() {
             _emailText.error = null
         }
 
-        if (password.isEmpty() || password.length < 4 || password.length > 10) {
-            _passwordText.error = "Insira uma senha contendo de 4 à 10 caracteres."
+        if (password.isEmpty() || password.length < 4 || password.length > 16) {
+            _passwordText.error = "Insira uma senha contendo de 4 à 16 caracteres."
             valid = false
         } else {
             _passwordText.error = null
         }
 
-        if (reEnterPassword.isEmpty() || reEnterPassword.length < 4 || reEnterPassword.length > 10 || reEnterPassword != password) {
+        if (reEnterPassword.isEmpty() || reEnterPassword.length < 4 || reEnterPassword.length > 16 || reEnterPassword != password) {
             _reEnterPasswordText.error = "A senha não confere com a anterior."
             valid = false
         } else {

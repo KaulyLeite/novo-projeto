@@ -103,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
             _emailText.error = null
         }
 
-        if (password.isEmpty() || password.length < 4 || password.length > 10) {
+        if (password.isEmpty() || password.length < 4 || password.length > 16) {
             _passwordText.error = "Insira uma senha válida."
             valid = false
         } else {
